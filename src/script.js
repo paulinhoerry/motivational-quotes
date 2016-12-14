@@ -1,13 +1,14 @@
-var getQuote = function () { 
+var getQuote = () => { 
 	return quotes[parseInt(Math.random() * quotes.length)];
 }
 
 const mark = `
 	<article>
-		<p>${getQuote().quote}</p>
+		<h1>${getQuote().quote}</h1>
 		<small>${getQuote().author}</small>
 	</article>
 `;
 
-document.body.innerHTML = mark;
 
+const article = document.getElementsByClassName('article')[0];
+article.innerHTML = mark;
