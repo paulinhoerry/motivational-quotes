@@ -1,0 +1,22 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: block;
+	background-image: url('/src/images/01.jpg');
+	background-size: cover;
+}
+
+
+.article {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-flow: column wrap;
+	height: 100%;
+	justify-content: center;
+	text-align: right;
+}
