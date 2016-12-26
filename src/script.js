@@ -2,10 +2,12 @@ var getQuote = () => {
     return quotes[parseInt(Math.random() * quotes.length)];
 }
 
+var quote = getQuote();
+
 const mark = `
 	<article>
-		<h1>${getQuote().quote}</h1>
-		<small>${getQuote().author}</small>
+		<h1>${quote.quote}</h1>
+		<small>${quote.author}</small>
 	</article>
 `;
 
